@@ -92,8 +92,8 @@
         </div>
     </header>
     
-    <main class="page-content wrapper">
-       <section class="catalogs">
+    <main class="page-content">
+       <section class="catalogs wrapper">
        <h2 class="visually-hidden">мы предлогаем</h2>
         <ul class="catalogs-services clearfix">
             <li class="cat-item new-flag ico-1">
@@ -149,40 +149,56 @@
         </ul>
         </section>
         
-        <section class="popular-goods">
+        <section class="popular-goods wrapper">
             <header class="header-popular">
                 <h2>популярные товары:</h2>
                 <a href="#" class="button red">все популярные товары</a>
             </header>
             <ul class="goods-list">
-                <li class="goods-item">
+                <li class="goods-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/product_1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+                        <div class="buttons">
+                            <a href="#" class="button red bag" id="bay">купить</a>
+                            <a href="#" class="button red" id="in-tabs">в закладки</a>
+                        </div>
                     </div>
                     <p>Перфоратор BOSCH BFG 9000</p>
                     <p>32500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
-                <li class="goods-item">
+                <li class="goods-item" tabindex="0">
                    <div class="wrapper-img">
                         <img src="img/product_2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
+                        <div class="buttons">
+                            <a href="#" class="button red bag" id="bay">купить</a>
+                            <a href="#" class="button red" id="in-tabs">в закладки</a>
+                        </div>
                     </div> 
                     <p>Перфоратор BOSCH BFG 3000</p>
                     <p>22500 Р.</p>
                     <p>15500 Р.</p>
                 </li>
-                <li class="goods-item">
+                <li class="goods-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/product_3.jpg" width="114" height="128" alt="Перфоратор BOSCH BFG 9000">
+                        <div class="buttons">
+                            <a href="#" class="button red bag" id="bay">купить</a>
+                            <a href="#" class="button red" id="in-tabs">в закладки</a>
+                        </div>
                     </div>
                     <p>Перфоратор BOSCH BFG 6000</p>
                     <p>30500 Р.</p>
                     <p>25500 Р.</p>
                 </li>
-                <li class="goods-item new-flag">
+                <li class="goods-item new-flag" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/product_4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
-                    </div> 
+                        <div class="buttons">
+                            <a href="#" class="button red bag" id="bay">купить</a>
+                            <a href="#" class="button red" id="in-tabs">в закладки</a>
+                        </div>
+                    </div>
                     <p>Перфоратор BOSCH BFG 2000</p>
                     <p>       </p>
                     <p>12500 Р.</p>
@@ -190,53 +206,115 @@
             </ul>
         </section>
         
-        <section class="popular-manufacturers">
+        <section class="popular-manufacturers wrapper">
             <header class="header-popular">
                 <h2>популярные производители:</h2>
                 <a href="#" class="button red">все производители</a>
             </header>
             <ul class="manufacturers-list">
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f1.png" width="126" height="37" alt="bosh">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f2.png" width="123" height="40" alt="makita">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f3.png" width="146" height="44" alt="dewalt">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f4.png" width="200" height="88" alt="bosh">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f5.png" width="169" height="31" alt="bosh">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f6.png" width="121" height="73" alt="bosh">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f7.png" width="151" height="96" alt="bosh">
                     </div>
                 </li>
-                <li class="manufacturers-item">
+                <li class="manufacturers-item" tabindex="0">
                     <div class="wrapper-img">
                         <img src="img/f8.png" width="204" height="69" alt="bosh">
                     </div>
                 </li>
             </ul>
+        </section>
+        
+        <section class="services">
+          <div class="wrapper">
+           <header class="services-header">
+            <h2>сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+           </header>
+              <div class="body-services">
+                   <ul class="button-list">
+                        <li class="button-item current-service">
+                            <button class="services-btn" type="button" id="delivery">Доставка</button>
+                        </li>
+                        <li class="button-item">
+                            <button class="services-btn" type="button" id="guarantee">Гарантия</button>
+                        </li>
+                        <li class="button-item">
+                            <button class="services-btn" type="button" id="credit">Кредит</button>
+                        </li>
+                   </ul>
+                  <ul class="services-list">
+                      <li class="services-item current-item">
+                            <h2>доставка</h2>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                            <div class="wrapper-image delivery"></div>
+                      </li>
+                      <li class="services-item">
+                            <h2>гарантия</h2>
+                            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                            <div class="wrapper-image guarantee"></div>
+                      </li>
+                      <li class="services-item">
+                            <h2>кредит</h2>
+                            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                            <div class="wrapper-image credit"></div>
+                      </li>
+                  </ul>
+              </div>
+              </div>
+        </section>
+        
+        <section class="promo wrapper">
+           <h2 class="visually-hidden">промо сайта</h2>
+           <div class="promo-text">
+               <h3>компания «техномарт»</h3>
+               <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+               <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
+               <ul>
+                   <li>Деловые линии</li>
+                   <li>Автотрейдинг</li>
+                   <li>ЖелДорЭкспедиция</li>
+               </ul>
+               <a href="#" class="button red">подробнее о компании</a>
+           </div>
+           <div class="contacts">
+               <h3>контакты</h3>
+               <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+               <img src="img/map.jpg" width="300" height="158" alt="карта">
+               <a href="#" class="button red">заблудились? напишите нам!</a>
+           </div>
+            
+            
         </section>
         
     </main>
