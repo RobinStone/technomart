@@ -977,25 +977,263 @@ background: url('../img/cart-icon.svg') no-repeat center;
 
 .promo {
     display: flex;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    padding-top: 90px;
+    margin-bottom: 86px;
+}
+
+.promo p {
+    margin: 0;
+    padding: 0;
+}
+
+.promo-text p {
+    max-width: 580px
+}
+
+.promo-text .red {
+    width: 220px;
+    font-family: 'Cuprum';
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.promo h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Cuprum';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.promo-text p:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+.promo-text p:nth-child(3) {
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+
+.port-company {
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Cuprum';
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.port-company li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.port-company li::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -40px;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    margin-left: auto;
+}
+
+.contacts p {
+    max-width: 200px;
+    margin-bottom: 33px;
+}
+
+.contacts .red {
+    width: 300px;
+    font-family: 'Cuprum';
+    font-size: 14px;
+    padding-top: 2px;
+}
+
+.contacts img {
+    margin-bottom: 34px;
+}
+
+/*------------------ FOOTER ----------------*/
+
+.main-footer a {
+    outline: none;
+}
+
+.top-footer {
+    background-color: #32425c;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 31px;
+}
+
+.footer-menu .main-page-btn {
+    font-size: 30px;
+    padding: 15px 42px;
+    height: 60px;
+}
+
+.footer-menu p {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 340px;
+    color: #f3f7f9;
+}
+
+.footer-menu-top,
+.footer-menu-bottom {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+}
+
+.footer-menu-top {
+    padding-top: 34px;
+    padding-bottom: 19px;
+}
+
+.footer-menu-top a {
+    margin-left: 59px;
+}
+
+.footer-menu-top a,
+.footer-menu-bottom a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-menu-top a:hover,
+.footer-menu-top a:focus,
+.footer-menu-bottom a:hover,
+.footer-menu-bottom a:focus {
+    text-decoration: underline;
+}
+
+.footer-menu-top a:active,
+.footer-menu-bottom a:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.footer-menu-bottom {
+    padding-top: 13px;
+}
+
+.footer-menu-bottom a {
+    margin-left: 60px;
+    color: #ffd180;
+}
+
+/*------------- BOTTOM FOOTER -------------*/
+
+.bottom-footer {
+    background-color: #293449;
+    padding: 20px 0 0;
+}
+
+.bottom-footer {
+    font-size: 16px;
+    color: #fff;
+    line-height: 18px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social p {
+    max-width: 250px;
+    margin-right: 100px;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list a {
+    display: block;
+    width: 39px;
+    height: 39px;
+    background-color: #212a3a;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0);
+    margin-right: 7px;
+}
+
+.social-list a:hover,
+.social-list a:focus {
+    background-color: #ee3643;
+}
+
+.vk-ico {
+    background: url('../img/vk-icon.svg') no-repeat center;
+    background-position: 5px;
+}
+
+.facebook-ico {
+    background: url('../img/fb-icon.svg') no-repeat center;
+    background-position: 11px;
+}
+
+.instagram-ico {
+    background: url('../img/insta-icon.svg') no-repeat center;
+    background-position: 8px;
+}
+
+.mail {
+    margin-left: auto;
+    max-width: 190px;
+    cursor: pointer;
+}
+
+.mail a {
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.producted {
+    max-width: 110px;
+    cursor: pointer;
+}
+
+.producted a {
+    color: #ffd180;
+    text-decoration: none;
+}
+
+.mail:hover a,
+.mail:focus a,
+.producted:hover a,
+.producted:focus a {
+    text-decoration: underline;
+}
+
+.mail a:active,
+.producted a:active {
+    text-decoration: none;
+    color: #ee3643;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*------------------------------------------*/
 
 .borders {
     outline: 2px solid green;
