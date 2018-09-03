@@ -1064,7 +1064,163 @@ background: url('../img/cart-icon.svg') no-repeat center;
 
 .contacts img {
     margin-bottom: 34px;
+    cursor: pointer;
 }
+
+.contacts img:hover {
+    box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.16);
+}
+
+/*------------------ MAP-POPAP ----------------*/
+
+.map-popap {
+    display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -45vh;
+    width: 940px;
+    height: 450px;
+    background-color: gray;
+    z-index: 10;
+    box-shadow: 0 4px 17px 10px rgba(0, 0, 0, 0.28);
+    transition: 1s;
+}
+
+.active-map {
+   top: 35vh;
+}
+
+.map-popap .button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -50px;
+    z-index: 20;
+    color: #ff0000;
+    font-size: 30px;
+}
+
+.interactive-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------- CONTACTS POPAP -------------*/
+
+.contacts-popap {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50vh;
+    width: 620px;
+    height: 430px;
+    background-color: #fff;
+    z-index: 10;
+    border-top: 7px solid #ff5257;
+    box-shadow: 0 4px 37px 10px rgba(0, 0, 0, 0.28);
+    font-size: 18px;
+    transition: 1s;
+}
+
+.active-popap {
+    top: 43vh;
+}
+
+.contacts-popap::before {
+    position: absolute;
+    content: '';
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 115px;
+    bottom: 0;
+    z-index: 2;
+}
+   
+#close-contacts {
+    position: absolute;
+    background: none;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 0px;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#close-contacts::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 4px;
+    left: 7px;
+    top: 15px;
+    transform: rotate(45deg);
+    background-color: #ff5257;
+}
+
+#close-contacts::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 4px;
+    left: 7px;
+    top: 15px;
+    transform: rotate(-45deg);
+    background-color: #ff5257;
+}
+
+#close-contacts:hover,
+#close-contacts:focus {
+    transform: scale(1.2);
+    top: 5px;
+}
+
+.mail-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 35px 80px;
+}
+
+.user-input {
+    max-width:220px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.user-input:nth-child(3) {
+    margin-left: auto;
+}
+
+.user-input input {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    padding: 8px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.text-field {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+.contacts-popap .red {
+    min-width: 100%;
+    z-index: 3;
+    margin-top: auto;
+}
+
+
 
 /*------------------ FOOTER ----------------*/
 

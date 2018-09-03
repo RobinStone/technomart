@@ -308,11 +308,35 @@
             <div class="contacts">
                 <h3>контакты</h3>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                <img src="img/map.jpg" width="300" height="158" alt="карта">
-                <a href="#" class="button red">заблудились? напишите нам!</a>
+                <img src="img/map.jpg" id="micro-map" width="300" height="158" alt="карта">
+                <a class="button red" id="popap">заблудились? напишите нам!</a>
             </div>
         </section>
 
+        <section class="map-popap">
+            <button type="button" class="button" id="close-map">x</button>
+            <div class="interactive-map" id="map"></div>
+        </section>
+       
+        <section class="contacts-popap">
+           <form class="mail-form" action="#" method="post">
+            <button type="button" id="close-contacts">закрыть попап</button>
+            <label class="user-input">
+                Ваше имя:
+                <input type="text" name="user-name" placeholder="Имя Фамилия">
+            </label>
+            <label class="user-input">
+                Ваш e-mail:
+                <input type="text" name="user-email" placeholder="email@example.com">
+            </label>
+            
+            <label class="user-text" for="user-message">Текст письма:</label>
+            <textarea class="text-field" name="user-message" rows="6" placeholder="В свободной форме"></textarea>
+                <button type="submit" class="button red">отправить</button>
+
+            </form>
+        </section>
+       
         <footer class="main-footer">
             <div class="top-footer">
                 <div class="footer-menu wrapper">
@@ -355,6 +379,7 @@
 
     </main>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/myjs.js"></script>
 </body>
 
