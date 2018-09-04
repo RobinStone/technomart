@@ -59,6 +59,10 @@
             </div>
             <div class="user-access">
                 <a href="#" class="button white user-name">Равшан Джамшутович</a>
+                <ul type="disk" class="person-menu">
+                    <li><a hre="#">Мои заказы</a></li>
+                    <li><a hre="#">Личный кабинет</a></li>
+                </ul>
             </div>
 
             <nav class="main-navigation">
@@ -90,14 +94,72 @@
     </header>
 
     <main class="page-content">
+        <section class="breadcrumbs wrapper">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <ul class="pages-list">
+                <li class="page-item">
+                   <a href='index.html'>
+                    <img src="img/icon-home.svg" width="15" height="15" alt="на главную страницу">
+                   </a>
+                </li>
+                <li class="page-item"><a href="#">каталог</a></li>
+                <li class="page-item"><a href="#">инструмент</a></li>
+                <li class="page-item"><a href="#">перфораторы</a></li>
+            </ul>
+        </section>
         
-        
-        
-        
-        
-        
-    </main>
-        
+        <section class="perforators wrapper">
+            <header class="perforators-header">перфораторы</header>
+    <form class="user-select" action="https://echo.htmlacademy.ru" method="POST" name="form-filter">
+        <div class="filter-header">фильтр:</div>
+        <fieldset>
+            <legend>цена:</legend>
+                <div class="toggle-modul">
+                    <div class="grad-line">
+                        <div class="bar-line"></div>
+                        <div class="toggle-min" tabindex="0"></div>
+                        <div class="toggle-max" tabindex="0"></div>
+                    </div>
+                </div>
+                <div class="min-max-value">
+                    <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                    <label class="max-price"><input name="max-price" type="text" value="15000"></label>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>производители:</legend>
+            <ul class="features-list">
+                <li class="features-item"><input class="visually-hidden" type="checkbox" name="slider" id="slider" value="slider"><label for="slider">bosch</label></li>
+                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="advantage-block" id="advantage-block" value="advantage-block"><label for="advantage-block">интерскол</label></li>
+                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="news" id="news" value="news"><label for="news">makita</label></li>
+                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="galery" id="galery" value="galery"><label for="galery">dewalt</label></li>
+                <li class="features-item"><input class="visually-hidden" type="checkbox" name="basket" id="basket" value="basket"><label for="basket">hitachi</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>питание:</legend>
+            <ul class="grids-list">
+                <li class="grids-item"><input class="visually-hidden" type="radio" name="grid-selector" id="adaptive" value="adaptive"><label for="adaptive">аккумуляторные</label></li>
+                <li class="grids-item"><input class="visually-hidden" type="radio" name="grid-selector" checked id="fixible" value="fixible"><label for="fixible">сетевые</label></li>
+            </ul>
+        </fieldset>
+        <button class="button" type="submit">показать</button>
+    </form>
+                 
+                <div class="catalog-sort">
+                    <span>сортировать</span>
+                    <ul class="sorted-type">
+                        <li class="sorted-item enabled"><a href="#">По цене</a></li>
+                        <li class="sorted-item"><a href="#">По типу</a></li>
+                        <li class="sorted-item"><a href="#">По функционалу</a></li>
+                    </ul>
+                    <ul class="sorted-arrow">
+                        <li class="arrow-item arrow-up enabled"><a href="#"><span class="visually-hidden">по возростанию</span></a></li>
+                        <li class="arrow-item arrow-down"><a href="#"><span class="visually-hidden">по убыванию</span></a></li>
+                    </ul>
+                </div>
+                                                                                            
+        </section>
        
         <footer class="main-footer">
             <div class="top-footer">
