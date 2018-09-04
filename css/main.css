@@ -1506,6 +1506,11 @@ background: url('../img/cart-icon.svg') no-repeat center;
     padding: 23px 40px 20px 0;
 }
 
+.perforators {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .perforators-header {
     background-color: #f2f6f8;
     font-family: 'Cuprum';
@@ -1514,6 +1519,165 @@ background: url('../img/cart-icon.svg') no-repeat center;
     font-weight: 400;
     padding: 28px;
     margin-bottom: 20px;
+    flex-basis: 100%;
+}
+
+.user-select {
+    min-width: 220px;
+}
+
+.filter-header {
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #f7f3ec;
+    padding: 13px 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.cost {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.toggle-modul {
+    position: relative;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.min-price input,
+.max-price input{
+    margin-left: 9px;
+}
+
+.grad-line {
+    position: absolute;
+    width: 75%;
+    border-top: 2px solid #bcbcbc;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toggle-min,
+.toggle-max {
+    box-sizing: content-box;
+    position: absolute;
+    top: -12px;
+    width: 5px;
+    height: 5px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background-color: #b9b7b7;
+    box-shadow: 0 2px 1px 0 rgba(56, 56, 56, 0.28);
+    cursor: pointer;
+}
+
+.toggle-min:hover,
+.toggle-min:focus,
+.toggle-max:hover,
+.toggle-max:focus {
+    background-color: #5a5a5a;
+    box-shadow: 0 2px 3px 2px rgba(93, 93, 93, 0.36);
+    outline: none;
+}
+
+.toggle-min:active,
+.toggle-max:active {
+    background-color: #ceffcc;
+    box-shadow: 0 0 6px 3px rgba(72, 72, 72, 0.37);
+}
+
+.toggle-min {
+    left: 5%;
+}
+
+.toggle-max {
+    left: 65%;
+}
+
+.bar-line {
+    position: absolute;
+    width: 55%;
+    border-top: 3px solid #09dd00;
+    top: -2px;
+    left: 25px;
+}
+
+.min-max-value {
+    display: flex;
+    justify-content: space-between
+}
+
+.min-max-value label {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.min-max-value input {
+    width: 80px;
+    text-align: center;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none;
+    outline: none;
+}
+
+fieldset {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-sort {
+    display: flex;
+}
+
+.sorted-type {
+    display: inherit;
+    margin-left: auto;
+}
+
+.trade-marks-item {
+    margin-bottom: 10px;
+}
+
+.trade-marks label {
+    display: block;
+    position: relative;
+    font-family: 'PT Sans';
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+
+.trade-marks label::after {
+    content: '';
+    position: absolute;
+    left: -35px;
+    bottom: 15px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.trade-marks input[type="checkbox"] ~ label::after {
+    background: url(../img/checkbox-off.svg) no-repeat center;
+    background-size: 100%;
+    opacity: 0.4;
 }
 
 /*-----------------------------------*/

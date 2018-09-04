@@ -113,7 +113,7 @@
     <form class="user-select" action="https://echo.htmlacademy.ru" method="POST" name="form-filter">
         <div class="filter-header">фильтр:</div>
         <fieldset>
-            <legend>цена:</legend>
+            <legend class="cost">цена:</legend>
                 <div class="toggle-modul">
                     <div class="grad-line">
                         <div class="bar-line"></div>
@@ -128,26 +128,26 @@
         </fieldset>
         <fieldset>
             <legend>производители:</legend>
-            <ul class="features-list">
-                <li class="features-item"><input class="visually-hidden" type="checkbox" name="slider" id="slider" value="slider"><label for="slider">bosch</label></li>
-                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="advantage-block" id="advantage-block" value="advantage-block"><label for="advantage-block">интерскол</label></li>
-                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="news" id="news" value="news"><label for="news">makita</label></li>
-                <li class="features-item"><input class="visually-hidden" type="checkbox" checked name="galery" id="galery" value="galery"><label for="galery">dewalt</label></li>
-                <li class="features-item"><input class="visually-hidden" type="checkbox" name="basket" id="basket" value="basket"><label for="basket">hitachi</label></li>
+            <ul class="trade-marks">
+                <li class="trade-marks-item borders"><input class="visually-hidden" type="checkbox" checked name="bosch" id="bosch" value="bosch"><label for="slider">bosch</label></li>
+                <li class="trade-marks-item"><input class="visually-hidden" type="checkbox" name="interskol" id="interskol" value="interskol"><label for="interskol">интерскол</label></li>
+                <li class="trade-marks-item"><input class="visually-hidden" type="checkbox" checked name="makita" id="makita" value="makita"><label for="makita">makita</label></li>
+                <li class="trade-marks-item"><input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt" value="dewalt"><label for="dewalt">dewalt</label></li>
+                <li class="trade-marks-item"><input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi" value="hitachi"><label for="hitachi">hitachi</label></li>
             </ul>
         </fieldset>
         <fieldset>
             <legend>питание:</legend>
-            <ul class="grids-list">
-                <li class="grids-item"><input class="visually-hidden" type="radio" name="grid-selector" id="adaptive" value="adaptive"><label for="adaptive">аккумуляторные</label></li>
-                <li class="grids-item"><input class="visually-hidden" type="radio" name="grid-selector" checked id="fixible" value="fixible"><label for="fixible">сетевые</label></li>
+            <ul class="type-list">
+                <li class="type-item"><input class="visually-hidden" type="radio" name="rechargeable" id="rechargeable" value="rechargeable"><label for="rechargeable">аккумуляторные</label></li>
+                <li class="type-item"><input class="visually-hidden" type="radio" name="power-line" checked id="power-line" value="power-line"><label for="power-line">сетевые</label></li>
             </ul>
         </fieldset>
         <button class="button" type="submit">показать</button>
     </form>
                  
                 <div class="catalog-sort">
-                    <span>сортировать</span>
+                    <p>сортировать</p>
                     <ul class="sorted-type">
                         <li class="sorted-item enabled"><a href="#">По цене</a></li>
                         <li class="sorted-item"><a href="#">По типу</a></li>
